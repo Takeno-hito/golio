@@ -235,12 +235,12 @@ type ChallengesDto struct {
 	TwelveAssistStreakCount                   int     `json:"12AssistStreakCount"`
 	BaronBuffGoldAdvantageOverThreshold       int     `json:"baronBuffGoldAdvantageOverThreshold"`
 	ControlWardTimeCoverageInRiverOrEnemyHalf float64 `json:"controlWardTimeCoverageInRiverOrEnemyHalf"`
-	EarliestBaron                             int     `json:"earliestBaron"`
-	EarliestDragonTakedown                    int     `json:"earliestDragonTakedown"`
-	EarliestElderDragon                       int     `json:"earliestElderDragon"`
+	EarliestBaron                             float64 `json:"earliestBaron"`
+	EarliestDragonTakedown                    float64 `json:"earliestDragonTakedown"`
+	EarliestElderDragon                       float64 `json:"earliestElderDragon"`
 	EarlyLaningPhaseGoldExpAdvantage          int     `json:"earlyLaningPhaseGoldExpAdvantage"`
-	FasterSupportQuestCompletion              int     `json:"fasterSupportQuestCompletion"`
-	FastestLegendary                          int     `json:"fastestLegendary"`
+	FasterSupportQuestCompletion              float64 `json:"fasterSupportQuestCompletion"`
+	FastestLegendary                          float64 `json:"fastestLegendary"`
 	HadAfkTeammate                            int     `json:"hadAfkTeammate"`
 	HighestChampionDamage                     int     `json:"highestChampionDamage"`
 	HighestCrowdControlScore                  int     `json:"highestCrowdControlScore"`
@@ -257,7 +257,7 @@ type ChallengesDto struct {
 	SoloTurretsLategame                       int     `json:"soloTurretsLategame"`
 	TakedownsFirst25Minutes                   int     `json:"takedownsFirst25Minutes"`
 	TeleportTakedowns                         int     `json:"teleportTakedowns"`
-	ThirdInhibitorDestroyedTime               int     `json:"thirdInhibitorDestroyedTime"`
+	ThirdInhibitorDestroyedTime               float64 `json:"thirdInhibitorDestroyedTime"`
 	ThreeWardsOneSweeperCount                 int     `json:"threeWardsOneSweeperCount"`
 	VisionScoreAdvantageLaneOpponent          float64 `json:"visionScoreAdvantageLaneOpponent"`
 	InfernalScalePickup                       int     `json:"InfernalScalePickup"`
@@ -268,7 +268,7 @@ type ChallengesDto struct {
 	AlliedJungleMonsterKills                  float64 `json:"alliedJungleMonsterKills"`
 	BaronTakedowns                            int     `json:"baronTakedowns"`
 	BlastConeOppositeOpponentCount            int     `json:"blastConeOppositeOpponentCount"`
-	BountyGold                                int     `json:"bountyGold"`
+	BountyGold                                float64 `json:"bountyGold"`
 	BuffsStolen                               int     `json:"buffsStolen"`
 	CompleteSupportQuestInTime                int     `json:"completeSupportQuestInTime"`
 	ControlWardsPlaced                        int     `json:"controlWardsPlaced"`
@@ -382,18 +382,18 @@ type ChallengesDto struct {
 
 // MissionsDto holds the mission player scores for a participant in a match
 type MissionsDto struct {
-	PlayerScore0  int `json:"playerScore0"`
-	PlayerScore1  int `json:"playerScore1"`
-	PlayerScore2  int `json:"playerScore2"`
-	PlayerScore3  int `json:"playerScore3"`
-	PlayerScore4  int `json:"playerScore4"`
-	PlayerScore5  int `json:"playerScore5"`
-	PlayerScore6  int `json:"playerScore6"`
-	PlayerScore7  int `json:"playerScore7"`
-	PlayerScore8  int `json:"playerScore8"`
-	PlayerScore9  int `json:"playerScore9"`
-	PlayerScore10 int `json:"playerScore10"`
-	PlayerScore11 int `json:"playerScore11"`
+	PlayerScore0  float64 `json:"playerScore0"`
+	PlayerScore1  float64 `json:"playerScore1"`
+	PlayerScore2  float64 `json:"playerScore2"`
+	PlayerScore3  float64 `json:"playerScore3"`
+	PlayerScore4  float64 `json:"playerScore4"`
+	PlayerScore5  float64 `json:"playerScore5"`
+	PlayerScore6  float64 `json:"playerScore6"`
+	PlayerScore7  float64 `json:"playerScore7"`
+	PlayerScore8  float64 `json:"playerScore8"`
+	PlayerScore9  float64 `json:"playerScore9"`
+	PlayerScore10 float64 `json:"playerScore10"`
+	PlayerScore11 float64 `json:"playerScore11"`
 }
 
 // Participant hold information for a participant of a match
@@ -489,18 +489,18 @@ type Participant struct {
 	PlayerAugment4                 int               `json:"playerAugment4"`
 	PlayerAugment5                 int               `json:"playerAugment5"`
 	PlayerAugment6                 int               `json:"playerAugment6"`
-	PlayerScore0                   int               `json:"playerScore0"`
-	PlayerScore1                   int               `json:"playerScore1"`
-	PlayerScore2                   int               `json:"playerScore2"`
-	PlayerScore3                   int               `json:"playerScore3"`
-	PlayerScore4                   int               `json:"playerScore4"`
-	PlayerScore5                   int               `json:"playerScore5"`
-	PlayerScore6                   int               `json:"playerScore6"`
-	PlayerScore7                   int               `json:"playerScore7"`
-	PlayerScore8                   int               `json:"playerScore8"`
-	PlayerScore9                   int               `json:"playerScore9"`
-	PlayerScore10                  int               `json:"playerScore10"`
-	PlayerScore11                  int               `json:"playerScore11"`
+	PlayerScore0                   float64           `json:"playerScore0"`
+	PlayerScore1                   float64           `json:"playerScore1"`
+	PlayerScore2                   float64           `json:"playerScore2"`
+	PlayerScore3                   float64           `json:"playerScore3"`
+	PlayerScore4                   float64           `json:"playerScore4"`
+	PlayerScore5                   float64           `json:"playerScore5"`
+	PlayerScore6                   float64           `json:"playerScore6"`
+	PlayerScore7                   float64           `json:"playerScore7"`
+	PlayerScore8                   float64           `json:"playerScore8"`
+	PlayerScore9                   float64           `json:"playerScore9"`
+	PlayerScore10                  float64           `json:"playerScore10"`
+	PlayerScore11                  float64           `json:"playerScore11"`
 	PlayerSubteamID                int               `json:"playerSubteamId"`
 	ProfileIcon                    int               `json:"profileIcon"`
 	PushPings                      int               `json:"pushPings"` // Green minion
